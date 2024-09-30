@@ -7,7 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 
 
 app.use(express.static('public'));
@@ -20,11 +20,11 @@ let posts = [];
 
 
 app.get("/", (req,res) => {
-    res.render("index", { posts });
+    res.render("index.ejs", { posts });
 });
 
 app.get("/write", (req, res) => {
-    res.render("write");
+    res.render("write.ejs");
 })
 
 app.post("/write", (req,res) => {
