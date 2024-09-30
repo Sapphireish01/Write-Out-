@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+
+<div class="form-post">
+    <section id="posts"></section>
+    <form id="form" method="post" action="/write">
+        <div class="class">
+            <input class="class title" type="text" placeholder="Title">
+            <textarea class="class"  id="content" placeholder="Write your content here..."></textarea>
+        </div>
+        <div class="btns">
+            <button class="submit btn-1 "><i class="fa-regular fa-paper-plane"></i></button>
+        </div>
+    </form>
+</div>
+
+<script src="main.js"></script>

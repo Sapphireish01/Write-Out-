@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: #263159;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header section */
+header {
+    width: 100%;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.head a{
+    text-decoration: none;
+}
+.head h1 span {
+    font-style: italic;
+}
+
+button {
+    padding: 5px 5px;
+}
+
+.login span a {
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.login span a:hover {
+    background-color: #263159;
+    color: #F1F6F9;
+}
+
+
+@media(max-width: 830px) {
+        h1 {
+        font-size: 20px;
+    } 
+}
+
+/* body */
+.container {
+    max-width: 960px;
+    width: 70%;
+    margin: auto;
+   background-color: #F1F6F9;
+   font-size: 18px;
+}
+
+.container article {
+    line-height: 27px;
+    letter-spacing: .5px;
+    
+}
+
+.container h2 {
+    margin: 5px;
+}
+
+
+/* footer */
+
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* write page */
+
+#form {
+    display: flex;
+    /* flex-direction: column; */
+    position: fixed;
+    bottom: 2px;
+    background-color: #f0f0f0;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    clear: both;
+}
+.class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: 70%;
+    padding: 10px;
+    margin: 9px 0 0 120px;
+    border-radius: 10px;
+}
+
+#form input {
+    border: none;
+    width: -webkit-fill-available;
+    background: none;
+    font-weight: 600;
+    outline: none;
+    font-size: 17px;
+    margin-left: 12px;
+}
+#form input::placeholder {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: .7px;
+    color: #585d64;
+}
+#form textarea::placeholder {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .4px;
+    color: #585d64;
+}
+#form textarea {
+    width: -webkit-fill-available;
+    height: 50px;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    font-size: 1em;
+    resize: vertical;
+    margin: 0 0 0 3px;
+    padding: 0;
+}
+
+#form textarea:focus {
+    outline: none;
+    border-color: #8e97a7;
+    box-shadow: 0 0 5px rgba(144, 154, 166, 0.5);
+}
+
+#form textarea::-webkit-scrollbar {
+    width: 15px;
+}
+
+#form textarea::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+#form button {
+    width: 80px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 3px 0;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.btn-1 {
+    margin: 10px 0;
+}
+
+/* index page - write button */
+
+#write  {
+    margin-top: 20px;
+   text-align: center;   
+
+}
+
+#write a{
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 100px;
+    width: 510px;
+}
+
+@media only screen and  (max-width: 390px) {
+    .container {
+        font-size: 13px;
+        width: 80%;
+    }
+    .container article {
+        line-height: 20px;
+        letter-spacing: .3px;
+        
+    }    
+    body {
+        min-height: 100%;
+    }
+    .new-div {
+        width: 220px;
+    }
+    #posts .new-div div {
+        font-size: 9px;
+        padding: 10px;
+    }
+    #form {
+        display: flex;
+        width: 100%;
+    }
+    .class {
+        width: 85%;
+        margin: 0;
+        background: none;
+    }
+    #posts {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    #form textarea::placeholder {
+        color: #585d64;
+        font-size: 11px;
+    }
+    #form input::placeholder {
+        color: #585d64;
+        font-size: 11px;
+    }
+    #form input {
+        padding: 2px;
+        font-size: 11px;
+    }
+    #form button {
+        width: 40px;
+        border-radius: 20px;
+    }
+    .btns{
+        margin-right: 8px;
+    }
+}
+
+.new-div {
+    position: relative;
+    padding: 10px 20px 40px;
+    margin: 10px 25px 50px ;
+    box-shadow: 0 0 3px 0;
+    border-radius: 20px;
+}
+.new-div h2 {
+    margin-bottom: 10px;
+}
+.delete-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+    color: rgb(37, 52, 142);
+    font-size: 1.2em;
+    margin: 5px 10px 0 0;
+    box-shadow: 0 0 3px 0;
+    width: 60px;
+    border-radius: 20px;
+}
+.new-div .delete-button {
+    display: none;
+}
+.new-div:hover .delete-button {
+    display: block;
+}
